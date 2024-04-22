@@ -19,7 +19,9 @@
     "start": "BROWSER=none WDS_SOCKET_PORT=0 vite --port 3000",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "encrypt": "zip -e jsx.zip JSX.jsx && rm JSX.jsx",
+    "decrypt": "unzip jsx.zip && rm jsx.zip"
   },
   "eslintConfig": {
     "extends": [
